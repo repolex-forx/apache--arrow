@@ -23,13 +23,13 @@
       "@type": "repolex:GraphFile",
       "repolex:graphType": "branch",
       "repolex:graphFilePath": "branch/branch.nq.gz",
-      "repolex:graphFileSize": 8736
+      "repolex:graphFileSize": 8863
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "tag",
       "repolex:graphFilePath": "tag/tag.nq.gz",
-      "repolex:graphFileSize": 11505
+      "repolex:graphFileSize": 11600
     },
     {
       "@type": "repolex:GraphFile",
@@ -39,7 +39,7 @@
     }
   ],
   "repolex:parseStatus": "parsed",
-  "repolex:parsedAt": "2026-04-11T18:46:33.351769+00:00",
+  "repolex:parsedAt": "2026-04-11T19:44:24.889751+00:00",
   "repolex:parserVersion": "0.1.0",
   "git:tagName": "r-universe-release"
 }
