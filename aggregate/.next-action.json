@@ -2,7 +2,7 @@
   "next_action": "parse",
   "phase_completed": "parse_partial",
   "commit_sha": "7dd1d34074af176d9e861a360e135ae57b21cf96",
-  "ts": "2026-04-18T16:14:09Z",
+  "ts": "2026-04-18T17:49:07Z",
   "blobs_parsed": 500,
-  "blobs_remaining": 4693
+  "blobs_remaining": 3989
 }
