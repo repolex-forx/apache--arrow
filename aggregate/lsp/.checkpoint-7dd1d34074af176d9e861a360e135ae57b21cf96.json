@@ -1,0 +1,28 @@
+{
+  "commit_sha": "7dd1d34074af176d9e861a360e135ae57b21cf96",
+  "completed_files": [
+    "cpp/src/arrow/compute/kernels/vector_selection_take_internal.cc",
+    "cpp/src/arrow/util/int_util_test.cc"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/apache/arrow/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz",
+    "call_sites": 551685,
+    "import_statements": 26517,
+    "call_targets_resolved": 16,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 529,
+    "extends_clauses": 2725,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 41191,
+    "import_symbols_denormalized": 1998,
+    "extends_class_denormalized": 524,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14499
+}
