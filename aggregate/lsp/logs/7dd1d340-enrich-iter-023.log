@@ -1,0 +1,16 @@
+[2026-04-22T23:19:32Z] === ENRICH ITERATION 23 START | repo=apache/arrow sha=7dd1d340 ===
+[2026-04-22T23:19:32Z] [iter=23] PHASE START: enrich repo=apache/arrow sha=7dd1d340 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7dd1d340-enrich-iter-023.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz
+[2026-04-22T23:19:32Z] [iter=23] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T23:34:02Z] [iter=23] AST store loaded triples=59442261 load_secs=847 mem_mb=1200 MB
+[2026-04-22T23:34:02Z] [iter=23] Step 2: Finding LSP targets mem_mb=1200 MB
+[2026-04-22T23:36:23Z] [iter=23] LSP targets found call_sites=551685 imports=26517 extends=2725 implements=0 secs=140
+[2026-04-22T23:36:26Z] [iter=23] Loaded checkpoint partial graph triples=74723
+[2026-04-22T23:38:19Z] [iter=23] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1203 MB
+[2026-04-22T23:45:10Z] [iter=23] Position index built positions=3743841 nodes_with_types=4795806 secs=411 mem_mb=7845 MB
+[2026-04-22T23:45:10Z] [iter=23] Step 3: Starting LSP resolution mem_mb=7845 MB already_completed_types=[] already_completed_files=2
+[2026-04-22T23:45:10Z] [iter=23] Resolving target type target_type=call_site count=551685
+[2026-04-22T23:45:14Z] [iter=23] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/filesystem/azurefs.cc
+[2026-04-23T03:21:11Z] [iter=23] CHECKPOINT TRIGGERED elapsed_min=241.7 files_completed=2 new_files_this_iter=0 mem_mb=7940 MB
+[2026-04-23T03:21:11Z] [iter=23] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz triples=74723
+[2026-04-23T03:21:12Z] [iter=23] Checkpoint written, exiting with code 7
+[2026-04-23T03:21:12Z] [iter=23] PHASE END: enrich (checkpointed) elapsed_s=14499 elapsed_min=241.7 files_completed=2
