@@ -1,0 +1,18 @@
+[2026-04-24T14:53:46Z] === ENRICH ITERATION 4 START | repo=apache/arrow sha=ac970766 ===
+[2026-04-24T14:53:46Z] [iter=4] PHASE START: enrich repo=apache/arrow sha=ac970766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ac970766-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz
+[2026-04-24T14:53:46Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-24T15:08:22Z] [iter=4] AST store loaded triples=58538703 load_secs=852 mem_mb=1186 MB
+[2026-04-24T15:08:22Z] [iter=4] Step 2: Finding LSP targets mem_mb=1186 MB
+[2026-04-24T15:10:45Z] [iter=4] LSP targets found call_sites=543315 imports=26092 extends=2697 implements=0 secs=143
+[2026-04-24T15:10:48Z] [iter=4] Loaded checkpoint partial graph triples=75676
+[2026-04-24T15:12:43Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1186 MB
+[2026-04-24T15:19:42Z] [iter=4] Position index built positions=3686093 nodes_with_types=4721244 secs=418 mem_mb=7676 MB
+[2026-04-24T15:19:42Z] [iter=4] Step 3: Starting LSP resolution mem_mb=7676 MB already_completed_types=[] already_completed_files=4
+[2026-04-24T15:19:42Z] [iter=4] Resolving target type target_type=call_site count=543315
+[2026-04-24T15:19:44Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=26.0 files_done=0 resolved=0 errors=0 current=go/arrow/flight/flight_test.go
+[2026-04-24T16:39:53Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=106.1 files_done=1 resolved=4 errors=199 current=go/arrow/scalar/numeric.gen.go
+[2026-04-24T18:46:45Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=233.0 files_done=2 resolved=42 errors=517 current=go/arrow/compute/internal/kernels/scalar_comparison_avx2_amd64.go
+[2026-04-24T18:55:33Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=241.8 files_completed=6 new_files_this_iter=2 mem_mb=7697 MB
+[2026-04-24T18:55:33Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz triples=77660
+[2026-04-24T18:55:35Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-04-24T18:55:35Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=14508 elapsed_min=241.8 files_completed=6
