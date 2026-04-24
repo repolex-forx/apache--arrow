@@ -2,6 +2,7 @@
   "commit_sha": "ac9707663c160599fc46925a9d15d2cf030d110b",
   "completed_files": [
     "go/arrow/array/json_reader_test.go",
+    "go/arrow/array/string_test.go",
     "go/arrow/compute/internal/kernels/numeric_cast.go"
   ],
   "completed_types": [],
@@ -10,13 +11,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz",
     "call_sites": 543315,
     "import_statements": 26092,
-    "call_targets_resolved": 73,
+    "call_targets_resolved": 91,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 522,
+    "errors": 1056,
     "extends_clauses": 2697,
     "implements_clauses": 0,
     "import_modules_denormalized": 40398,
@@ -24,5 +25,5 @@
     "extends_class_denormalized": 530,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14602
+  "elapsed_seconds": 14496
 }
