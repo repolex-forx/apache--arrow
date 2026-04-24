@@ -4,6 +4,7 @@
     "go/arrow/array/json_reader_test.go",
     "go/arrow/array/string_test.go",
     "go/arrow/compute/internal/kernels/numeric_cast.go",
+    "go/arrow/compute/internal/kernels/scalar_comparison_avx2_amd64.go",
     "go/arrow/flight/flight_test.go",
     "go/arrow/scalar/numeric.gen.go",
     "go/parquet/internal/utils/bit_packing_default.go"
@@ -14,13 +15,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz",
     "call_sites": 543315,
     "import_statements": 26092,
-    "call_targets_resolved": 148,
+    "call_targets_resolved": 260,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 2131,
+    "errors": 2651,
     "extends_clauses": 2697,
     "implements_clauses": 0,
     "import_modules_denormalized": 40398,
@@ -28,5 +29,5 @@
     "extends_class_denormalized": 530,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14507
+  "elapsed_seconds": 14406
 }

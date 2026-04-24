@@ -1,0 +1,17 @@
+[2026-04-24T19:03:36Z] === ENRICH ITERATION 5 START | repo=apache/arrow sha=ac970766 ===
+[2026-04-24T19:03:36Z] [iter=5] PHASE START: enrich repo=apache/arrow sha=ac970766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ac970766-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz
+[2026-04-24T19:03:36Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-24T19:18:13Z] [iter=5] AST store loaded triples=58538703 load_secs=853 mem_mb=1185 MB
+[2026-04-24T19:18:13Z] [iter=5] Step 2: Finding LSP targets mem_mb=1185 MB
+[2026-04-24T19:20:39Z] [iter=5] LSP targets found call_sites=543315 imports=26092 extends=2697 implements=0 secs=145
+[2026-04-24T19:20:42Z] [iter=5] Loaded checkpoint partial graph triples=77660
+[2026-04-24T19:22:36Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1185 MB
+[2026-04-24T19:29:29Z] [iter=5] Position index built positions=3686093 nodes_with_types=4721244 secs=413 mem_mb=7705 MB
+[2026-04-24T19:29:29Z] [iter=5] Step 3: Starting LSP resolution mem_mb=7705 MB already_completed_types=[] already_completed_files=6
+[2026-04-24T19:29:29Z] [iter=5] Resolving target type target_type=call_site count=543315
+[2026-04-24T19:29:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=0 resolved=0 errors=0 current=go/arrow/compute/internal/kernels/scalar_comparison_avx2_amd64.go
+[2026-04-24T19:49:18Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=45.7 files_done=1 resolved=4 errors=48 current=go/arrow/ipc/metadata.go
+[2026-04-24T23:03:42Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=7 new_files_this_iter=1 mem_mb=7790 MB
+[2026-04-24T23:03:42Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz triples=80374
+[2026-04-24T23:03:44Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-04-24T23:03:44Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14406 elapsed_min=240.1 files_completed=7
