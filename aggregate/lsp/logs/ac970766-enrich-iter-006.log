@@ -1,0 +1,17 @@
+[2026-04-24T23:11:04Z] === ENRICH ITERATION 6 START | repo=apache/arrow sha=ac970766 ===
+[2026-04-24T23:11:04Z] [iter=6] PHASE START: enrich repo=apache/arrow sha=ac970766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ac970766-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz
+[2026-04-24T23:11:04Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-24T23:25:00Z] [iter=6] AST store loaded triples=58538703 load_secs=816 mem_mb=1183 MB
+[2026-04-24T23:25:00Z] [iter=6] Step 2: Finding LSP targets mem_mb=1183 MB
+[2026-04-24T23:27:16Z] [iter=6] LSP targets found call_sites=543315 imports=26092 extends=2697 implements=0 secs=136
+[2026-04-24T23:27:19Z] [iter=6] Loaded checkpoint partial graph triples=80374
+[2026-04-24T23:29:08Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1183 MB
+[2026-04-24T23:34:58Z] [iter=6] Position index built positions=3686093 nodes_with_types=4721244 secs=350 mem_mb=7717 MB
+[2026-04-24T23:34:58Z] [iter=6] Step 3: Starting LSP resolution mem_mb=7717 MB already_completed_types=[] already_completed_files=7
+[2026-04-24T23:34:58Z] [iter=6] Resolving target type target_type=call_site count=543315
+[2026-04-24T23:35:00Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=0 resolved=0 errors=0 current=go/arrow/ipc/metadata.go
+[2026-04-25T02:19:07Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=188.1 files_done=1 resolved=12 errors=502 current=go/arrow/example_test.go
+[2026-04-25T03:12:16Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=241.2 files_completed=8 new_files_this_iter=1 mem_mb=7740 MB
+[2026-04-25T03:12:16Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz triples=81322
+[2026-04-25T03:12:17Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-04-25T03:12:17Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=14472 elapsed_min=241.2 files_completed=8
