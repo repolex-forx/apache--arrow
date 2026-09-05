@@ -1,6 +1,12 @@
 {
   "commit_sha": "ac9707663c160599fc46925a9d15d2cf030d110b",
   "completed_files": [
+    "c_glib/gandiva-glib/node.cpp",
+    "cpp/src/arrow/compute/kernels/scalar_arithmetic_test.cc",
+    "cpp/src/arrow/compute/kernels/scalar_validity_test.cc",
+    "cpp/src/arrow/flight/transport/grpc/grpc_server.cc",
+    "cpp/src/arrow/ipc/reader.h",
+    "cpp/src/arrow/type_test.cc",
     "go/arrow/array/builder.go",
     "go/arrow/array/json_reader_test.go",
     "go/arrow/array/string_test.go",
@@ -19,13 +25,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz",
     "call_sites": 543315,
     "import_statements": 26092,
-    "call_targets_resolved": 517,
+    "call_targets_resolved": 542,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 4394,
+    "errors": 548201,
     "extends_clauses": 2697,
     "implements_clauses": 0,
     "import_modules_denormalized": 40398,
@@ -33,5 +39,5 @@
     "extends_class_denormalized": 530,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14508
+  "elapsed_seconds": 14478
 }
