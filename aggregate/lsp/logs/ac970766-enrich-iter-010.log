@@ -1,0 +1,20 @@
+[2026-09-07T17:06:34Z] === ENRICH ITERATION 10 START | repo=apache/arrow sha=ac970766 ===
+[2026-09-07T17:06:34Z] [iter=10] PHASE START: enrich repo=apache/arrow sha=ac970766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ac970766-enrich-iter-010.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz
+[2026-09-07T17:06:34Z] [iter=10] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-07T17:20:18Z] [iter=10] AST store loaded triples=58538703 load_secs=798 mem_mb=1174 MB
+[2026-09-07T17:20:18Z] [iter=10] Step 2: Finding LSP targets mem_mb=1174 MB
+[2026-09-07T17:22:39Z] [iter=10] LSP targets found call_sites=543315 imports=26092 extends=2697 implements=0 secs=141
+[2026-09-07T17:22:43Z] [iter=10] Loaded checkpoint partial graph triples=93863
+[2026-09-07T17:24:37Z] [iter=10] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1174 MB
+[2026-09-07T17:30:26Z] [iter=10] Position index built positions=3686093 nodes_with_types=4721244 secs=349 mem_mb=7744 MB
+[2026-09-07T17:30:26Z] [iter=10] Step 3: Starting LSP resolution mem_mb=7744 MB already_completed_types=[] already_completed_files=17
+[2026-09-07T17:30:26Z] [iter=10] Resolving target type target_type=call_site count=543315
+[2026-09-07T17:30:30Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=23.9 files_done=0 resolved=0 errors=543315 current=cpp/src/arrow/util/async_generator.h
+[2026-09-07T19:38:00Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=151.4 files_done=1 resolved=27 errors=543617 current=r/src/buffer.cpp
+[2026-09-07T19:39:41Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=153.1 files_done=2 resolved=28 errors=543621 current=cpp/src/parquet/encoding_test.cc
+[2026-09-07T20:00:37Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=174.0 files_done=3 resolved=28 errors=543671 current=cpp/src/arrow/util/formatting.h
+[2026-09-07T21:00:53Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=234.3 files_done=4 resolved=40 errors=543815 current=cpp/src/arrow/compute/kernels/vector_replace.cc
+[2026-09-07T21:07:09Z] [iter=10] CHECKPOINT TRIGGERED elapsed_min=240.6 files_completed=21 new_files_this_iter=4 mem_mb=7830 MB
+[2026-09-07T21:07:09Z] [iter=10] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz triples=97432
+[2026-09-07T21:07:11Z] [iter=10] Checkpoint written, exiting with code 7
+[2026-09-07T21:07:11Z] [iter=10] PHASE END: enrich (checkpointed) elapsed_s=14435 elapsed_min=240.6 files_completed=21
