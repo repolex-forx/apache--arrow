@@ -1,14 +1,18 @@
 {
   "commit_sha": "ac9707663c160599fc46925a9d15d2cf030d110b",
   "completed_files": [
+    "c_glib/arrow-glib/scalar.cpp",
     "c_glib/gandiva-glib/node.cpp",
     "cpp/src/arrow/compute/kernels/scalar_arithmetic_test.cc",
     "cpp/src/arrow/compute/kernels/scalar_validity_test.cc",
+    "cpp/src/arrow/compute/kernels/vector_replace.cc",
     "cpp/src/arrow/flight/transport/grpc/grpc_server.cc",
     "cpp/src/arrow/ipc/reader.h",
     "cpp/src/arrow/type_test.cc",
     "cpp/src/arrow/util/async_generator.h",
     "cpp/src/arrow/util/formatting.h",
+    "cpp/src/gandiva/precompiled/arithmetic_ops_test.cc",
+    "cpp/src/gandiva/tests/projector_test.cc",
     "cpp/src/parquet/encoding_test.cc",
     "go/arrow/array/builder.go",
     "go/arrow/array/json_reader_test.go",
@@ -21,6 +25,7 @@
     "go/arrow/ipc/metadata.go",
     "go/arrow/scalar/numeric.gen.go",
     "go/parquet/internal/utils/bit_packing_default.go",
+    "python/pyarrow/src/arrow/python/python_test.cc",
     "r/src/buffer.cpp"
   ],
   "completed_types": [],
@@ -29,13 +34,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz",
     "call_sites": 543315,
     "import_statements": 26092,
-    "call_targets_resolved": 622,
+    "call_targets_resolved": 740,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 1092031,
+    "errors": 1635870,
     "extends_clauses": 2697,
     "implements_clauses": 0,
     "import_modules_denormalized": 40398,
@@ -43,5 +48,5 @@
     "extends_class_denormalized": 530,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14434
+  "elapsed_seconds": 14426
 }
