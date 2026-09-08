@@ -7,6 +7,7 @@
     "cpp/src/arrow/compute/exec.cc",
     "cpp/src/arrow/compute/kernels/hash_aggregate.cc",
     "cpp/src/arrow/compute/kernels/scalar_arithmetic_test.cc",
+    "cpp/src/arrow/compute/kernels/scalar_if_else_test.cc",
     "cpp/src/arrow/compute/kernels/scalar_validity_test.cc",
     "cpp/src/arrow/compute/kernels/vector_replace.cc",
     "cpp/src/arrow/flight/transport/grpc/grpc_server.cc",
@@ -19,7 +20,10 @@
     "cpp/src/arrow/vendored/portable-snippets/safe-math.h",
     "cpp/src/gandiva/function_registry_test.cc",
     "cpp/src/gandiva/precompiled/arithmetic_ops_test.cc",
+    "cpp/src/gandiva/precompiled/time_test.cc",
     "cpp/src/gandiva/tests/projector_test.cc",
+    "cpp/src/parquet/benchmark_util.cc",
+    "cpp/src/parquet/column_writer.cc",
     "cpp/src/parquet/encoding_test.cc",
     "cpp/src/parquet/stream_writer_test.cc",
     "go/arrow/array/builder.go",
@@ -43,13 +47,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz",
     "call_sites": 543315,
     "import_statements": 26092,
-    "call_targets_resolved": 1251,
+    "call_targets_resolved": 1263,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 2723525,
+    "errors": 3267362,
     "extends_clauses": 2697,
     "implements_clauses": 0,
     "import_modules_denormalized": 40398,
@@ -57,5 +61,5 @@
     "extends_class_denormalized": 530,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14418
+  "elapsed_seconds": 14421
 }
