@@ -1,0 +1,18 @@
+[2026-09-09T11:03:17Z] === ENRICH ITERATION 16 START | repo=apache/arrow sha=ac970766 ===
+[2026-09-09T11:03:17Z] [iter=16] PHASE START: enrich repo=apache/arrow sha=ac970766 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ac970766-enrich-iter-016.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz
+[2026-09-09T11:03:17Z] [iter=16] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-09T11:17:43Z] [iter=16] AST store loaded triples=58538703 load_secs=842 mem_mb=1190 MB
+[2026-09-09T11:17:43Z] [iter=16] Step 2: Finding LSP targets mem_mb=1190 MB
+[2026-09-09T11:20:07Z] [iter=16] LSP targets found call_sites=543315 imports=26092 extends=2697 implements=0 secs=144
+[2026-09-09T11:20:13Z] [iter=16] Loaded checkpoint partial graph triples=125258
+[2026-09-09T11:22:05Z] [iter=16] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1238 MB
+[2026-09-09T11:28:47Z] [iter=16] Position index built positions=3686093 nodes_with_types=4721244 secs=403 mem_mb=7839 MB
+[2026-09-09T11:28:47Z] [iter=16] Step 3: Starting LSP resolution mem_mb=7839 MB already_completed_types=[] already_completed_files=43
+[2026-09-09T11:28:47Z] [iter=16] Resolving target type target_type=call_site count=543315
+[2026-09-09T11:28:51Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=0 resolved=0 errors=543315 current=cpp/src/generated/parquet_types.cpp
+[2026-09-09T13:58:06Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=174.8 files_done=1 resolved=24 errors=543663 current=cpp/src/arrow/compute/kernel_test.cc
+[2026-09-09T14:00:49Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=177.5 files_done=2 resolved=29 errors=543669 current=cpp/src/arrow/acero/swiss_join.cc
+[2026-09-09T15:03:21Z] [iter=16] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=45 new_files_this_iter=2 mem_mb=7911 MB
+[2026-09-09T15:03:21Z] [iter=16] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ac9707663c160599fc46925a9d15d2cf030d110b.nq.gz triples=127428
+[2026-09-09T15:03:23Z] [iter=16] Checkpoint written, exiting with code 7
+[2026-09-09T15:03:23Z] [iter=16] PHASE END: enrich (checkpointed) elapsed_s=14403 elapsed_min=240.1 files_completed=45
