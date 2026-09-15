@@ -17,19 +17,19 @@
       "@type": "repolex:GraphFile",
       "repolex:graphType": "commit",
       "repolex:graphFilePath": "commit/commit.nq.gz",
-      "repolex:graphFileSize": 16263887
+      "repolex:graphFileSize": 16256472
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "branch",
       "repolex:graphFilePath": "branch/branch.nq.gz",
-      "repolex:graphFileSize": 9551
+      "repolex:graphFileSize": 9582
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "tag",
       "repolex:graphFilePath": "tag/tag.nq.gz",
-      "repolex:graphFileSize": 12002
+      "repolex:graphFileSize": 12340
     },
     {
       "@type": "repolex:GraphFile",
@@ -45,7 +45,7 @@
     }
   ],
   "repolex:parseStatus": "parsed",
-  "repolex:parsedAt": "2026-09-15T21:44:27.625442+00:00",
+  "repolex:parsedAt": "2026-09-15T22:40:26.754984+00:00",
   "repolex:parserVersion": "0.1.0",
   "git:tagName": "go/v17.0.0"
 }
