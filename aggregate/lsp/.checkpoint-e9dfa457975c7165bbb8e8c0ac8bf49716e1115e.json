@@ -1,0 +1,32 @@
+{
+  "commit_sha": "e9dfa457975c7165bbb8e8c0ac8bf49716e1115e",
+  "completed_files": [
+    "cpp/src/arrow/compute/kernels/aggregate_quantile.cc",
+    "cpp/src/arrow/compute/kernels/scalar_arithmetic_test.cc",
+    "cpp/src/arrow/flight/transport/ucx/ucx_internal.cc",
+    "cpp/src/arrow/util/string_test.cc",
+    "cpp/src/gandiva/interval_holder_test.cc",
+    "cpp/src/parquet/arrow/reconstruct_internal_test.cc"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/apache/arrow/lsp/e9dfa457975c7165bbb8e8c0ac8bf49716e1115e",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/e9dfa457975c7165bbb8e8c0ac8bf49716e1115e.nq.gz",
+    "call_sites": 529431,
+    "import_statements": 15897,
+    "call_targets_resolved": 68,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 548,
+    "extends_clauses": 2395,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 25195,
+    "import_symbols_denormalized": 2026,
+    "extends_class_denormalized": 299,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14411
+}
