@@ -1,0 +1,29 @@
+{
+  "commit_sha": "6a2e19a852b367c72d7b12da4d104456491ed8b7",
+  "completed_files": [
+    "dev/archery/archery/release/tests/test_release.py",
+    "python/pyarrow/tests/test_pandas.py",
+    "python/pyarrow/tests/test_types.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/apache/arrow/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz",
+    "call_sites": 563562,
+    "import_statements": 9905,
+    "call_targets_resolved": 458,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 520,
+    "extends_clauses": 2530,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 10951,
+    "import_symbols_denormalized": 2065,
+    "extends_class_denormalized": 353,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14476
+}
