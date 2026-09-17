@@ -1,0 +1,16 @@
+[2026-09-17T06:31:06Z] === ENRICH ITERATION 7 START | repo=apache/arrow sha=6a2e19a8 ===
+[2026-09-17T06:31:06Z] [iter=7] PHASE START: enrich repo=apache/arrow sha=6a2e19a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6a2e19a8-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz
+[2026-09-17T06:31:06Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-09-17T06:46:03Z] [iter=7] AST store loaded triples=58210021 load_secs=871 mem_mb=1197 MB
+[2026-09-17T06:46:03Z] [iter=7] Step 2: Finding LSP targets mem_mb=1197 MB
+[2026-09-17T06:49:34Z] [iter=7] LSP targets found call_sites=563562 imports=9905 extends=2530 implements=0 secs=211
+[2026-09-17T06:49:35Z] [iter=7] Loaded checkpoint partial graph triples=37542
+[2026-09-17T06:51:35Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1197 MB
+[2026-09-17T06:58:28Z] [iter=7] Position index built positions=3810105 nodes_with_types=4880884 secs=413 mem_mb=7007 MB
+[2026-09-17T06:58:28Z] [iter=7] Step 3: Starting LSP resolution mem_mb=7007 MB already_completed_types=[] already_completed_files=3
+[2026-09-17T06:58:28Z] [iter=7] Resolving target type target_type=call_site count=563562
+[2026-09-17T06:58:31Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=27.4 files_done=0 resolved=0 errors=0 current=cpp/build-support/cpplint.py
+[2026-09-17T10:33:14Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=242.1 files_completed=3 new_files_this_iter=0 mem_mb=7077 MB
+[2026-09-17T10:33:14Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz triples=37542
+[2026-09-17T10:33:15Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-09-17T10:33:15Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=14528 elapsed_min=242.1 files_completed=3
