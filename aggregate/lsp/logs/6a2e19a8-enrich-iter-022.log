@@ -1,0 +1,22 @@
+[2026-11-22T23:19:03Z] === ENRICH ITERATION 22 START | repo=apache/arrow sha=6a2e19a8 ===
+[2026-11-22T23:19:03Z] [iter=22] PHASE START: enrich repo=apache/arrow sha=6a2e19a8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/6a2e19a8-enrich-iter-022.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz
+[2026-11-22T23:19:03Z] [iter=22] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-22T23:36:21Z] [iter=22] AST store loaded triples=58210021 load_secs=1022 mem_mb=1119 MB
+[2026-11-22T23:36:21Z] [iter=22] Step 2: Finding LSP targets mem_mb=1119 MB
+[2026-11-22T23:39:03Z] [iter=22] LSP targets found call_sites=563562 imports=9905 extends=2530 implements=0 secs=162
+[2026-11-22T23:39:07Z] [iter=22] Loaded checkpoint partial graph triples=85280
+[2026-11-22T23:39:07Z] [iter=22] Primed enclosing-def cache from persisted triples entries=898
+[2026-11-22T23:40:28Z] [iter=22] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1148 MB
+[2026-11-22T23:44:40Z] [iter=22] Position index built positions=3810105 nodes_with_types=4880884 secs=252 mem_mb=7415 MB
+[2026-11-22T23:44:40Z] [iter=22] Step 3: Starting LSP resolution mem_mb=7415 MB already_completed_types=[] already_completed_files=18
+[2026-11-22T23:44:40Z] [iter=22] Resolving target type target_type=call_site count=563562
+[2026-11-22T23:44:43Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=0 resolved=0 errors=0 current=python/pyarrow/tests/parquet/test_pandas.py
+[2026-11-22T23:56:30Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=37.5 files_done=1 resolved=53 errors=0 current=python/pyarrow/tests/parquet/common.py
+[2026-11-23T00:00:36Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=41.5 files_done=2 resolved=89 errors=0 current=python/examples/flight/server.py
+[2026-11-23T00:08:44Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=49.7 files_done=3 resolved=142 errors=0 current=python/pyarrow/tests/test_convert_builtin.py
+[2026-11-23T00:31:41Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=72.6 files_done=4 resolved=498 errors=0 current=python/pyarrow/tests/test_dataset.py
+[2026-11-23T03:13:52Z] [iter=22] HEARTBEAT target_type=call_site elapsed_min=234.8 files_done=5 resolved=1694 errors=0 current=dev/archery/archery/cli.py
+[2026-11-23T03:20:02Z] [iter=22] CHECKPOINT TRIGGERED elapsed_min=241.0 files_completed=23 new_files_this_iter=5 mem_mb=7439 MB
+[2026-11-23T03:20:02Z] [iter=22] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz triples=103382
+[2026-11-23T03:20:03Z] [iter=22] Checkpoint written, exiting with code 7
+[2026-11-23T03:20:03Z] [iter=22] PHASE END: enrich (checkpointed) elapsed_s=14459 elapsed_min=241.0 files_completed=23
