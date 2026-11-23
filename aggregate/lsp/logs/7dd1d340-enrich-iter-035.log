@@ -1,17 +1,17 @@
-[2026-11-23T14:58:19Z] === ENRICH ITERATION 35 START | repo=apache/arrow sha=7dd1d340 ===
-[2026-11-23T14:58:19Z] [iter=35] PHASE START: enrich repo=apache/arrow sha=7dd1d340 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7dd1d340-enrich-iter-035.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz
-[2026-11-23T14:58:19Z] [iter=35] Step 1: Loading AST into disk-backed store mem_mb=72 MB
-[2026-11-23T15:21:26Z] [iter=35] AST store loaded triples=59442261 load_secs=1360 mem_mb=1179 MB
-[2026-11-23T15:21:26Z] [iter=35] Step 2: Finding LSP targets mem_mb=1179 MB
-[2026-11-23T15:24:27Z] [iter=35] LSP targets found call_sites=551685 imports=26517 extends=2725 implements=0 secs=182
-[2026-11-23T15:24:31Z] [iter=35] Loaded checkpoint partial graph triples=75142
-[2026-11-23T15:24:31Z] [iter=35] Primed enclosing-def cache from persisted triples entries=5
-[2026-11-23T15:26:09Z] [iter=35] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1179 MB
-[2026-11-23T15:32:36Z] [iter=35] Position index built positions=3743841 nodes_with_types=4795806 secs=388 mem_mb=7378 MB
-[2026-11-23T15:32:36Z] [iter=35] Step 3: Starting LSP resolution mem_mb=7378 MB already_completed_types=[] already_completed_files=2
-[2026-11-23T15:32:36Z] [iter=35] Resolving target type target_type=call_site count=551685
-[2026-11-23T15:32:40Z] [iter=35] HEARTBEAT target_type=call_site elapsed_min=34.4 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/filesystem/azurefs.cc
-[2026-11-23T15:35:56Z] [iter=35] CHECKPOINT TRIGGERED elapsed_min=37.6 files_completed=2 new_files_this_iter=0 mem_mb=7410 MB
-[2026-11-23T15:35:56Z] [iter=35] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz triples=75177
-[2026-11-23T15:35:58Z] [iter=35] Checkpoint written, exiting with code 7
-[2026-11-23T15:35:58Z] [iter=35] PHASE END: enrich (checkpointed) elapsed_s=2258 elapsed_min=37.6 files_completed=2
+[2026-11-23T15:37:10Z] === ENRICH ITERATION 35 START | repo=apache/arrow sha=7dd1d340 ===
+[2026-11-23T15:37:10Z] [iter=35] PHASE START: enrich repo=apache/arrow sha=7dd1d340 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7dd1d340-enrich-iter-035.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz
+[2026-11-23T15:37:10Z] [iter=35] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-23T15:54:42Z] [iter=35] AST store loaded triples=59442261 load_secs=1034 mem_mb=1175 MB
+[2026-11-23T15:54:42Z] [iter=35] Step 2: Finding LSP targets mem_mb=1175 MB
+[2026-11-23T15:57:13Z] [iter=35] LSP targets found call_sites=551685 imports=26517 extends=2725 implements=0 secs=151
+[2026-11-23T15:57:15Z] [iter=35] Loaded checkpoint partial graph triples=75142
+[2026-11-23T15:57:15Z] [iter=35] Primed enclosing-def cache from persisted triples entries=5
+[2026-11-23T15:58:37Z] [iter=35] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1175 MB
+[2026-11-23T16:03:02Z] [iter=35] Position index built positions=3743841 nodes_with_types=4795806 secs=265 mem_mb=7676 MB
+[2026-11-23T16:03:02Z] [iter=35] Step 3: Starting LSP resolution mem_mb=7676 MB already_completed_types=[] already_completed_files=2
+[2026-11-23T16:03:02Z] [iter=35] Resolving target type target_type=call_site count=551685
+[2026-11-23T16:03:06Z] [iter=35] HEARTBEAT target_type=call_site elapsed_min=25.9 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/filesystem/azurefs.cc
+[2026-11-23T16:07:58Z] [iter=35] CHECKPOINT TRIGGERED elapsed_min=30.8 files_completed=2 new_files_this_iter=0 mem_mb=7684 MB
+[2026-11-23T16:07:58Z] [iter=35] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz triples=75214
+[2026-11-23T16:07:59Z] [iter=35] Checkpoint written, exiting with code 7
+[2026-11-23T16:07:59Z] [iter=35] PHASE END: enrich (checkpointed) elapsed_s=1848 elapsed_min=30.8 files_completed=2
