@@ -2,9 +2,15 @@
   "commit_sha": "6a2e19a852b367c72d7b12da4d104456491ed8b7",
   "completed_files": [
     "cpp/build-support/cpplint.py",
+    "cpp/build-support/iwyu/iwyu_tool.py",
+    "cpp/gdb_arrow.py",
+    "dev/archery/archery/cli.py",
     "dev/archery/archery/docker/core.py",
     "dev/archery/archery/release/tests/test_release.py",
+    "java/c/src/test/python/integration_tests.py",
     "python/examples/flight/server.py",
+    "python/pyarrow/tests/interchange/test_conversion.py",
+    "python/pyarrow/tests/pandas_examples.py",
     "python/pyarrow/tests/parquet/common.py",
     "python/pyarrow/tests/parquet/test_basic.py",
     "python/pyarrow/tests/parquet/test_data_types.py",
@@ -12,6 +18,7 @@
     "python/pyarrow/tests/parquet/test_metadata.py",
     "python/pyarrow/tests/parquet/test_pandas.py",
     "python/pyarrow/tests/test_array.py",
+    "python/pyarrow/tests/test_cffi.py",
     "python/pyarrow/tests/test_compute.py",
     "python/pyarrow/tests/test_convert_builtin.py",
     "python/pyarrow/tests/test_cuda.py",
@@ -31,7 +38,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/6a2e19a852b367c72d7b12da4d104456491ed8b7.nq.gz",
     "call_sites": 563562,
     "import_statements": 9905,
-    "call_targets_resolved": 7259,
+    "call_targets_resolved": 8519,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -45,5 +52,5 @@
     "extends_class_denormalized": 353,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14458
+  "elapsed_seconds": 14442
 }
