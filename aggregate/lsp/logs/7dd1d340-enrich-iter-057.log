@@ -1,0 +1,17 @@
+[2026-11-24T06:00:25Z] === ENRICH ITERATION 57 START | repo=apache/arrow sha=7dd1d340 ===
+[2026-11-24T06:00:25Z] [iter=57] PHASE START: enrich repo=apache/arrow sha=7dd1d340 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7dd1d340-enrich-iter-057.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz
+[2026-11-24T06:00:25Z] [iter=57] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-24T06:19:31Z] [iter=57] AST store loaded triples=59442261 load_secs=1127 mem_mb=1113 MB
+[2026-11-24T06:19:31Z] [iter=57] Step 2: Finding LSP targets mem_mb=1113 MB
+[2026-11-24T06:22:39Z] [iter=57] LSP targets found call_sites=551685 imports=26517 extends=2725 implements=0 secs=188
+[2026-11-24T06:22:42Z] [iter=57] Loaded checkpoint partial graph triples=76204
+[2026-11-24T06:22:42Z] [iter=57] Primed enclosing-def cache from persisted triples entries=21
+[2026-11-24T06:24:17Z] [iter=57] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1113 MB
+[2026-11-24T06:29:20Z] [iter=57] Position index built positions=3743841 nodes_with_types=4795806 secs=303 mem_mb=7657 MB
+[2026-11-24T06:29:20Z] [iter=57] Step 3: Starting LSP resolution mem_mb=7657 MB already_completed_types=[] already_completed_files=2
+[2026-11-24T06:29:20Z] [iter=57] Resolving target type target_type=call_site count=551685
+[2026-11-24T06:29:24Z] [iter=57] HEARTBEAT target_type=call_site elapsed_min=29.0 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/filesystem/azurefs.cc
+[2026-11-24T06:32:00Z] [iter=57] CHECKPOINT TRIGGERED elapsed_min=31.6 files_completed=2 new_files_this_iter=0 mem_mb=7665 MB
+[2026-11-24T06:32:00Z] [iter=57] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/7dd1d34074af176d9e861a360e135ae57b21cf96.nq.gz triples=76234
+[2026-11-24T06:32:01Z] [iter=57] Checkpoint written, exiting with code 7
+[2026-11-24T06:32:01Z] [iter=57] PHASE END: enrich (checkpointed) elapsed_s=1895 elapsed_min=31.6 files_completed=2
