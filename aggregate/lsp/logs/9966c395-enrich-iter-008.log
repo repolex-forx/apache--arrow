@@ -1,0 +1,17 @@
+[2026-11-25T15:13:24Z] === ENRICH ITERATION 8 START | repo=apache/arrow sha=9966c395 ===
+[2026-11-25T15:13:24Z] [iter=8] PHASE START: enrich repo=apache/arrow sha=9966c395 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9966c395-enrich-iter-008.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz
+[2026-11-25T15:13:24Z] [iter=8] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-25T15:24:51Z] [iter=8] AST store loaded triples=45719737 load_secs=667 mem_mb=1158 MB
+[2026-11-25T15:24:51Z] [iter=8] Step 2: Finding LSP targets mem_mb=1158 MB
+[2026-11-25T15:27:34Z] [iter=8] LSP targets found call_sites=424998 imports=15921 extends=2230 implements=0 secs=163
+[2026-11-25T15:27:37Z] [iter=8] Loaded checkpoint partial graph triples=51780
+[2026-11-25T15:27:37Z] [iter=8] Primed enclosing-def cache from persisted triples entries=60
+[2026-11-25T15:29:04Z] [iter=8] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1158 MB
+[2026-11-25T15:34:00Z] [iter=8] Position index built positions=2884857 nodes_with_types=3702521 secs=296 mem_mb=6042 MB
+[2026-11-25T15:34:00Z] [iter=8] Step 3: Starting LSP resolution mem_mb=6042 MB already_completed_types=[] already_completed_files=4
+[2026-11-25T15:34:00Z] [iter=8] Resolving target type target_type=call_site count=424998
+[2026-11-25T15:34:05Z] [iter=8] HEARTBEAT target_type=call_site elapsed_min=20.7 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/compute/kernels/hash_aggregate.cc
+[2026-11-25T15:43:41Z] [iter=8] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=4 new_files_this_iter=0 mem_mb=6044 MB
+[2026-11-25T15:43:41Z] [iter=8] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz triples=53157
+[2026-11-25T15:43:42Z] [iter=8] Checkpoint written, exiting with code 7
+[2026-11-25T15:43:42Z] [iter=8] PHASE END: enrich (checkpointed) elapsed_s=1817 elapsed_min=30.3 files_completed=4
