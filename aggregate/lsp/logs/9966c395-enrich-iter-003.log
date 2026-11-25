@@ -1,0 +1,17 @@
+[2026-11-25T12:08:19Z] === ENRICH ITERATION 3 START | repo=apache/arrow sha=9966c395 ===
+[2026-11-25T12:08:19Z] [iter=3] PHASE START: enrich repo=apache/arrow sha=9966c395 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9966c395-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz
+[2026-11-25T12:08:19Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-25T12:19:27Z] [iter=3] AST store loaded triples=45719737 load_secs=650 mem_mb=1156 MB
+[2026-11-25T12:19:27Z] [iter=3] Step 2: Finding LSP targets mem_mb=1156 MB
+[2026-11-25T12:21:28Z] [iter=3] LSP targets found call_sites=424998 imports=15921 extends=2230 implements=0 secs=121
+[2026-11-25T12:21:30Z] [iter=3] Loaded checkpoint partial graph triples=43612
+[2026-11-25T12:21:30Z] [iter=3] Primed enclosing-def cache from persisted triples entries=10
+[2026-11-25T12:22:52Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1156 MB
+[2026-11-25T12:28:34Z] [iter=3] Position index built positions=2884857 nodes_with_types=3702521 secs=343 mem_mb=6019 MB
+[2026-11-25T12:28:34Z] [iter=3] Step 3: Starting LSP resolution mem_mb=6019 MB already_completed_types=[] already_completed_files=1
+[2026-11-25T12:28:34Z] [iter=3] Resolving target type target_type=call_site count=424998
+[2026-11-25T12:28:39Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.3 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/c/bridge_test.cc
+[2026-11-25T12:38:47Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.5 files_completed=1 new_files_this_iter=0 mem_mb=6020 MB
+[2026-11-25T12:38:47Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz triples=44249
+[2026-11-25T12:38:48Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-25T12:38:48Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1828 elapsed_min=30.5 files_completed=1
