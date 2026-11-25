@@ -1,0 +1,17 @@
+[2026-11-25T12:44:40Z] === ENRICH ITERATION 4 START | repo=apache/arrow sha=9966c395 ===
+[2026-11-25T12:44:40Z] [iter=4] PHASE START: enrich repo=apache/arrow sha=9966c395 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9966c395-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz
+[2026-11-25T12:44:40Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-25T12:57:51Z] [iter=4] AST store loaded triples=45719737 load_secs=777 mem_mb=1108 MB
+[2026-11-25T12:57:51Z] [iter=4] Step 2: Finding LSP targets mem_mb=1108 MB
+[2026-11-25T12:59:25Z] [iter=4] LSP targets found call_sites=424998 imports=15921 extends=2230 implements=0 secs=95
+[2026-11-25T12:59:27Z] [iter=4] Loaded checkpoint partial graph triples=44249
+[2026-11-25T12:59:27Z] [iter=4] Primed enclosing-def cache from persisted triples entries=18
+[2026-11-25T13:00:24Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1108 MB
+[2026-11-25T13:04:02Z] [iter=4] Position index built positions=2884857 nodes_with_types=3702521 secs=218 mem_mb=6079 MB
+[2026-11-25T13:04:02Z] [iter=4] Step 3: Starting LSP resolution mem_mb=6079 MB already_completed_types=[] already_completed_files=1
+[2026-11-25T13:04:02Z] [iter=4] Resolving target type target_type=call_site count=424998
+[2026-11-25T13:04:05Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=19.4 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/c/bridge_test.cc
+[2026-11-25T13:14:49Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=30.1 files_completed=1 new_files_this_iter=0 mem_mb=6081 MB
+[2026-11-25T13:14:49Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz triples=45364
+[2026-11-25T13:14:49Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-11-25T13:14:49Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=1808 elapsed_min=30.1 files_completed=1
