@@ -3,6 +3,7 @@
   "completed_files": [
     "cpp/src/arrow/c/bridge_test.cc",
     "cpp/src/arrow/compute/exec/tpch_node_test.cc",
+    "cpp/src/arrow/util/io_util_test.cc",
     "cpp/src/arrow/util/thread_pool.cc"
   ],
   "completed_types": [],
@@ -11,7 +12,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/9966c39583f1e203bac9200753e9db32478d43a6.nq.gz",
     "call_sites": 424998,
     "import_statements": 15921,
-    "call_targets_resolved": 416,
+    "call_targets_resolved": 759,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -25,5 +26,5 @@
     "extends_class_denormalized": 463,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1814
+  "elapsed_seconds": 1805
 }
