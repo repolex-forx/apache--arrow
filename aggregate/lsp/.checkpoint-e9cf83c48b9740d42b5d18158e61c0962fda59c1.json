@@ -7,12 +7,18 @@
     "c_glib/parquet-glib/arrow-file-writer.cpp",
     "cpp/src/arrow/array-struct-test.cc",
     "cpp/src/arrow/array-test.cc",
+    "cpp/src/arrow/compute/compute-benchmark.cc",
+    "cpp/src/arrow/compute/expression.cc",
     "cpp/src/arrow/gpu/cuda-test.cc",
+    "cpp/src/arrow/ipc/json-internal.cc",
+    "cpp/src/arrow/python/deserialize.cc",
     "cpp/src/arrow/util/hash-util.h",
     "cpp/src/arrow/util/hashing.h",
     "cpp/src/arrow/util/uri-test.cc",
     "cpp/src/arrow/vendored/datetime/date.h",
     "cpp/src/gandiva/expr_decomposer_test.cc",
+    "cpp/src/gandiva/llvm_generator.cc",
+    "cpp/src/gandiva/tests/literal_test.cc",
     "cpp/src/parquet/arrow/arrow-reader-writer-test.cc",
     "cpp/src/parquet/column_scanner.cc",
     "cpp/src/parquet/metadata-test.cc",
@@ -24,7 +30,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz",
     "call_sites": 147199,
     "import_statements": 8066,
-    "call_targets_resolved": 2580,
+    "call_targets_resolved": 2837,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -38,5 +44,5 @@
     "extends_class_denormalized": 295,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1835
+  "elapsed_seconds": 1827
 }
