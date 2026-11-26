@@ -1,0 +1,18 @@
+[2026-11-26T06:14:35Z] === ENRICH ITERATION 3 START | repo=apache/arrow sha=e9cf83c4 ===
+[2026-11-26T06:14:35Z] [iter=3] PHASE START: enrich repo=apache/arrow sha=e9cf83c4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/e9cf83c4-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz
+[2026-11-26T06:14:35Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-26T06:19:27Z] [iter=3] AST store loaded triples=16546419 load_secs=287 mem_mb=1014 MB
+[2026-11-26T06:19:27Z] [iter=3] Step 2: Finding LSP targets mem_mb=1014 MB
+[2026-11-26T06:20:05Z] [iter=3] LSP targets found call_sites=147199 imports=8066 extends=868 implements=179 secs=38
+[2026-11-26T06:20:06Z] [iter=3] Loaded checkpoint partial graph triples=29700
+[2026-11-26T06:20:06Z] [iter=3] Primed enclosing-def cache from persisted triples entries=116
+[2026-11-26T06:20:32Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1014 MB
+[2026-11-26T06:22:01Z] [iter=3] Position index built positions=1046495 nodes_with_types=1325660 secs=89 mem_mb=2362 MB
+[2026-11-26T06:22:01Z] [iter=3] Step 3: Starting LSP resolution mem_mb=2362 MB already_completed_types=[] already_completed_files=13
+[2026-11-26T06:22:01Z] [iter=3] Resolving target type target_type=call_site count=147199
+[2026-11-26T06:22:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=0 resolved=0 errors=0 current=cpp/src/parquet/metadata-test.cc
+[2026-11-26T06:30:38Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=16.1 files_done=1 resolved=100 errors=0 current=cpp/src/arrow/array-struct-test.cc
+[2026-11-26T06:45:07Z] [iter=3] CHECKPOINT TRIGGERED elapsed_min=30.5 files_completed=15 new_files_this_iter=2 mem_mb=2373 MB
+[2026-11-26T06:45:07Z] [iter=3] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz triples=32498
+[2026-11-26T06:45:08Z] [iter=3] Checkpoint written, exiting with code 7
+[2026-11-26T06:45:08Z] [iter=3] PHASE END: enrich (checkpointed) elapsed_s=1832 elapsed_min=30.5 files_completed=15

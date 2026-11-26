@@ -5,6 +5,7 @@
     "c_glib/arrow-glib/input-stream.cpp",
     "c_glib/arrow-glib/tensor.cpp",
     "c_glib/parquet-glib/arrow-file-writer.cpp",
+    "cpp/src/arrow/array-struct-test.cc",
     "cpp/src/arrow/array-test.cc",
     "cpp/src/arrow/gpu/cuda-test.cc",
     "cpp/src/arrow/util/hash-util.h",
@@ -13,6 +14,7 @@
     "cpp/src/gandiva/expr_decomposer_test.cc",
     "cpp/src/parquet/arrow/arrow-reader-writer-test.cc",
     "cpp/src/parquet/column_scanner.cc",
+    "cpp/src/parquet/metadata-test.cc",
     "cpp/src/plasma/hash_table_store.cc"
   ],
   "completed_types": [],
@@ -21,7 +23,7 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz",
     "call_sites": 147199,
     "import_statements": 8066,
-    "call_targets_resolved": 605,
+    "call_targets_resolved": 823,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
@@ -35,5 +37,5 @@
     "extends_class_denormalized": 295,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 1818
+  "elapsed_seconds": 1832
 }
