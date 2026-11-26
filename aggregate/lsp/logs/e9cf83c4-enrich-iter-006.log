@@ -1,0 +1,17 @@
+[2026-11-26T08:05:14Z] === ENRICH ITERATION 6 START | repo=apache/arrow sha=e9cf83c4 ===
+[2026-11-26T08:05:14Z] [iter=6] PHASE START: enrich repo=apache/arrow sha=e9cf83c4 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/e9cf83c4-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz
+[2026-11-26T08:05:14Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=74 MB
+[2026-11-26T08:09:32Z] [iter=6] AST store loaded triples=16546419 load_secs=255 mem_mb=1078 MB
+[2026-11-26T08:09:32Z] [iter=6] Step 2: Finding LSP targets mem_mb=1078 MB
+[2026-11-26T08:10:02Z] [iter=6] LSP targets found call_sites=147199 imports=8066 extends=868 implements=179 secs=29
+[2026-11-26T08:10:03Z] [iter=6] Loaded checkpoint partial graph triples=36285
+[2026-11-26T08:10:03Z] [iter=6] Primed enclosing-def cache from persisted triples entries=265
+[2026-11-26T08:10:24Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1078 MB
+[2026-11-26T08:11:30Z] [iter=6] Position index built positions=1046495 nodes_with_types=1325660 secs=66 mem_mb=2438 MB
+[2026-11-26T08:11:30Z] [iter=6] Step 3: Starting LSP resolution mem_mb=2438 MB already_completed_types=[] already_completed_files=15
+[2026-11-26T08:11:30Z] [iter=6] Resolving target type target_type=call_site count=147199
+[2026-11-26T08:11:32Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=0 resolved=0 errors=0 current=cpp/src/arrow/vendored/datetime/date.h
+[2026-11-26T08:35:56Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=30.7 files_completed=15 new_files_this_iter=0 mem_mb=2448 MB
+[2026-11-26T08:35:56Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/e9cf83c48b9740d42b5d18158e61c0962fda59c1.nq.gz triples=38524
+[2026-11-26T08:35:57Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-11-26T08:35:57Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=1842 elapsed_min=30.7 files_completed=15
