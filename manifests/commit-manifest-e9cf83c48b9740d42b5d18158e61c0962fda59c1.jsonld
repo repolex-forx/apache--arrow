@@ -23,13 +23,13 @@
       "@type": "repolex:GraphFile",
       "repolex:graphType": "branch",
       "repolex:graphFilePath": "branch/branch.nq.gz",
-      "repolex:graphFileSize": 10277
+      "repolex:graphFileSize": 9925
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "tag",
       "repolex:graphFilePath": "tag/tag.nq.gz",
-      "repolex:graphFileSize": 12676
+      "repolex:graphFileSize": 12754
     },
     {
       "@type": "repolex:GraphFile",
@@ -45,7 +45,7 @@
     }
   ],
   "repolex:parseStatus": "metadata_complete",
-  "repolex:parsedAt": "2026-11-26T02:25:27.140667+00:00",
+  "repolex:parsedAt": "2026-11-26T02:58:27.797997+00:00",
   "repolex:parserVersion": "0.1.10",
   "git:tagName": "apache-arrow-js-0.4.1"
 }
