@@ -42,9 +42,27 @@
       "repolex:graphType": "pr",
       "repolex:graphFilePath": "pr/pr.nq.gz",
       "repolex:graphFileSize": 12317582
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "ast",
+      "repolex:graphFilePath": "aggregate/ast/e9cf83c48b9740d42b5d18158e61c0962fda59c1/chunk-001.nq.gz",
+      "repolex:graphFileSize": 83952334
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "ast",
+      "repolex:graphFilePath": "aggregate/ast/e9cf83c48b9740d42b5d18158e61c0962fda59c1/chunk-002.nq.gz",
+      "repolex:graphFileSize": 84009305
+    },
+    {
+      "@type": "repolex:GraphFile",
+      "repolex:graphType": "ast",
+      "repolex:graphFilePath": "aggregate/ast/e9cf83c48b9740d42b5d18158e61c0962fda59c1/chunk-003.nq.gz",
+      "repolex:graphFileSize": 73524049
     }
   ],
-  "repolex:parseStatus": "metadata_complete",
+  "repolex:parseStatus": "ast_complete",
   "repolex:parsedAt": "2026-11-26T04:17:18.318391+00:00",
   "repolex:parserVersion": "0.1.10",
   "git:tagName": "apache-arrow-js-0.4.1"
